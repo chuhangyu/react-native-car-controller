@@ -5,12 +5,26 @@ import {
   View,
   Text
 } from 'react-native';
-
+import {
+	Table
+} from 'antd-mobile';
 
 export default class Log extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+		};
+	}
 	render() {
 		return (
-			<View><Text>log</Text></View>
+			<View>
+				{this.props.logdata.map((e, l)=>(
+					<Text
+						key={l}>
+					{e}
+					</Text>
+				))}
+			</View>
 		);
 	}
 }

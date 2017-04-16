@@ -12,7 +12,6 @@ import {
    Button,
    Toast
 } from "antd-mobile";
-import { createForm } from 'rc-form';
 import Back from './Back';
 import Logo from '../images/car.png';
 
